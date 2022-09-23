@@ -1,4 +1,5 @@
 {
   "reqres": "https://reqres.in/",
-  "baseUrl": "https://gorest.co.in"
+  "baseUrl": "https://gorest.co.in",
+  "passenger" : "https://api.instantwebtools.net"
 }

@@ -17,9 +17,10 @@ public class GoRestCreateUserPositiveTest extends APITest {
     @Test(groups = "api")
     public void shouldCreateUser() {
 
+        long startTime = System.nanoTime();
+
 
         //Arrange
-
         String name = "Akash";
         String email = "akashsalunke" + UUID.randomUUID() +"@gmail.com";
         String gender = "male";
@@ -40,6 +41,10 @@ public class GoRestCreateUserPositiveTest extends APITest {
 
         //
         Assert.assertEquals(response.getEmail(),email);
+
+        long elapsedTime = System.nanoTime() - startTime;
+
+        System.out.println("time taken in milliseconds is "+ elapsedTime/1000000);
 
     }
 }
