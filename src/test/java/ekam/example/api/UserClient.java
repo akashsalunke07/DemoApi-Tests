@@ -17,18 +17,13 @@ public class UserClient extends RetrofitBaseClient {
         Call<Response> getSingleUser(
                 @Path("id") int id
         );
-
-
         @Headers({"Content-Type: application/json"})
         @POST("/api/users")
         Call<CreateUserResponse> createUser(
                 @Body CreateUserRequest request,
                 @Header("authorization") String token);
-        
     }
-
     private final UserService service;
-
     @Inject
     public UserClient(@Named("reqres") String baseUrl) {
         super(baseUrl);
