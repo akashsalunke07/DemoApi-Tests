@@ -8,6 +8,6 @@ public class DataProviderForApi {
 
     @DataProvider
     public Object[][] validUserIds() {
-        return new Object[][] {{2675},{2679},{2677},{2678}};
+        return new Object[][] {{2319},{2318},{2316},{2315}};
     }
 }
