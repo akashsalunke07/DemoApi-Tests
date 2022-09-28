@@ -20,6 +20,6 @@ public class GetPassengerListPositiveTest extends APITest {
         List<GetPassengerListResponse> passengerListResponse = Client(GetPassengerClient.class).getPassengers();
 
         //Assert
-        Assert.assertEquals(passengerListResponse.size(),13683);
+        Assert.assertEquals(passengerListResponse.size(),258);
     }
 }
