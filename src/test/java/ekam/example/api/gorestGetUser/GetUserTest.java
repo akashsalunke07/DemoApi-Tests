@@ -20,7 +20,7 @@ public class GetUserTest extends APITest {
         GetUserResponse response = Client(GorestUserClient.class).getSingleUser(id);
 
         //Assert
-        Assert.assertNotNull(response.getId());
+        Assert.assertNotNull(response);
 
     }
 }
