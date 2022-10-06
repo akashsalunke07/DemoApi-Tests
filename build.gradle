@@ -29,8 +29,15 @@ dependencies {
     // appium
     implementation('io.appium:java-client:7.5.1')
 
+<<<<<<< HEAD
     //AssertJ
     implementation('org.assertj:assertj-core:3.20.2')
+=======
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+
+
+>>>>>>> ea512e7 (introduced lombok, added Error response class, added method for assertion)
 
     // selenium
     implementation('org.seleniumhq.selenium:selenium-java:3.141.59')
